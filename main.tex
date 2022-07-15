@@ -1,0 +1,354 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{standalone}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage{marvosym} % For cool symbols.
+%\usepackage{hyperref}
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{MATHIEU} % Your first name
+\familyname{LEONARDON} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Department of MEE}{IMT Atlantique}
+\mobile{(+33) 229001384}
+
+
+%\fax{(000) 111 1113}
+ 
+%\social{github}{stefano-bragaglia}
+\email{mathieu.leonardon@imt-atlantique.fr} 
+
+
+
+\homepage{www.mathieuleonardon.com/}{My Webpage}
+
+% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
+\extrainfo{
+    \faGithub\href{https://github.com/bonben}{ Github} \quad
+    \faLinkedin\href{https://bit.ly/3us0P9P}{ Linkedin} \quad
+    % \faSkype\href{https://skype.com/abc}{Skype}
+    }
+
+
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+\photo[70pt][0.3pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2015--2018}{PhD, Electrical Engineering}{Polytechnique Montréal and Université de Bordeaux}{codirec}{Polar Decoding on programmable architectures}
+{Forward Error Correction, Polar Codes, Software Implementations, Hardware Implementations, ASIP}  % Arguments not required can be left empty
+
+\cventry{2012--2015 :}{Master of Engineering, Embedded Electronics}{Bordeaux INP, ENSEIRB-Matmeca}{Bordeaux}{}{}
+%{Advanced exposure to various areas of computer science along with a one and half year research project on Reversible Logic Synthesis.}
+%\cvitem{CGPA :}{7.96/10}
+% \cventry{2009--2013 :}{Bachelor of Engineering, Computer Science \& Technology}{Indian Institute of Engineering Science \& Technology}{Shibpur(\textit{Formerly} Bengal Engineering and Science University, Shibpur)}{}{}
+%{Comprehensive exposure to the core areas of Computer Science along with a final year project on Data-mining}
+%\cvitem{CGPA :}{7.36/10}
+% \cventry{2008 :}{Higher Secondary Examination}{Belmuri Union Institution}{Belmuri}{}{ Mathematics, Physics, Chemistry, Biology, English, Bengali}
+% {}
+% \cvitem{Percentage :}{81.2 \%}
+% \cventry{2006 :}{Secondary Examination}{Belmuri Union Institution}{Belmuri}{}{ Mathematics, Physical Science, Life Science, Geography, History, English, Bengali}
+% {}
+% \cvitem{Percentage :}{90.8 \%}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Publications}
+% \subsection{Journal Article(Accepted)}
+% \cventry{2019}{\textbf{Pratik Dutta}, Sriparna Saha, Sanket Pai and Aviral Kumar}{}{Protein-protein Interaction based Generative Model for Improving Gene Clustering}{In \textit{\textbf{Scientific Reports-Nature}} (\textbf{Impact Factor: 4.12)}}{}
+
+\subsection{Journal Articles}
+\newbibliography{journal}
+\bibliographystyle{journal}{plainyrrev}
+\nocite{journal}{*}
+\bibliography{journal}{journal}
+{\large \textsc{Refereed Journal Articles}}
+% \subsection{Communicated Journal Article}
+% \cventry{2020}{Pratik Dutta, Aditya Prakash Patra, and Sriparna Saha}{}{DeePROG: An Attention based Deep Multi-modal Architecture for Disease Gene Prognosis}{In \textit{IEEE Transactions on Biomedical Engineering}}{}
+
+
+\subsection{In Conference Proceedings}
+\newbibliography{conference}
+\nocite{conference}{*}
+\bibliographystyle{conference}{plainyrrev}
+\bibliography{conference}{conference}
+{\large \textsc{Refereed Conference Publications}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\subsection{ENSEIRB-Matmeca, France}
+\cventry{Sep,2018 -- Dec, 2019}{\textit{A Flexible and Portable Real-time DVB-S2 Transceiver using Multicore and SIMD CPUs}}{}{}{}
+{Developing a full Software Defined Radio communication chain for real-time processing for satellite communications with Airbus Defense \& Space. 
+}
+\cvitem{Advisor :}{\textbf{Pr. Christophe Jégo}, \textit{Full Professor, Electrical Engineering Department}, Bordeaux INP ({\Colorhref{https://www.linkedin.com/in/christophe-jego-8b70454/} {\textit{LinkedIn}}})}
+
+% \cventry{July,2018 -- present}{\textit{Developing Deep Multi-modal Architecture for Biomedical Problems}}{}{}{}
+% {Analyzing different modalities of genes like gene expression profiles, protein 3D structure, underlying amino acid sequence using popular deep learning models to obtain deeper insight into the underlying biological system. 
+% }
+% \cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
+
+
+
+
+\subsection{Worldcast Systems, }
+\cventry{Sep,2012 -- Aug,2015}{\textit{Design and Test of FM transmitters}}{}{}{}{Participated in the design of Ecreso FM transmitters, created a Human-Machine Interface for production and customers.}
+\cvitem{Advisor :}{\textbf{Hervé Garat}, \textit{R\&D Engineer},({\Colorhref{https://www.linkedin.com/in/hervegarat/} {\textit{LinkedIn}}})}
+
+
+% \cventry{September,2012 -- Aug,2015}{\textit{Design and Test of FM transmitters}}{}{}{}{Participated in the design of Ecreso FM transmitters, created a Human-Machine interface for production and customers}
+% \cvitem{Advisor :}{\textbf{Hervé Garat}, \textit{Engineer, R&D Departement}, ({\Colorhref{https://www.linkedin.com/in/hervegarat/} {\textit{LinkedIn}}})}
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Fellowships \& Awards
+%----------------------------------------------------------------------------------------
+
+% \section{Fellowships \& Awards}
+
+% \cvitem{2016 --present}{\textit{\textbf{Visvesvaraya Fellowship}} of Ministry of Electronics and Information Technology (MeitY), Government of India, as a PhD research scholar in Indian Institute of Technology Patna.}
+% \cvitem{2019}{Receipt of \textit{\textbf{Visvesvaraya Travel Grant}} to attend a international conference \textbf{\textit{IEEE Congress on Evolutionary Computation, 2019}} in Wellington, New Zealand.}
+% \cvitem{2018}{Recipient of \textit{\textbf{SciGenome Research Foundation (SGRF) GYAN Scholarship}} to participate \textbf{\textit{Nextgen Genomics, Biology, Bioinformatics and Technologies-2018}} meeting at Jaipur India from $30^{th}$ September to $2^{nd}$ October 2018. }
+% \cvitem{2015}{Awarded under \textit{\textbf{Students Reward Programme}} at the Annual General Meeting of \textbf{Global Alumni Association of Bengal Engineering and Science University(GAABESU).}}
+
+
+%----------------------------------------------------------------------------------------
+%	Community Involvement
+%----------------------------------------------------------------------------------------
+
+\section{Reviewer}
+
+
+\cvitem{}{IEEE SIPS, IEEE ISTC, GRETSI, IEEE NEWCAS, IEEE SysInt, MDPI Entropy}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Programming Languages}{C, C++, Python, PyTorch}
+\cvitem{HDL}{VHDL, Vivado HLS}
+\cvitem{Software}{Git, Gitlab CI, Linux, Inkscape}
+
+
+%----------------------------------------------------------------------------------------
+%	Position of Responsibility SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Position of Responsibility}
+% \cventry{2016-2020}{Executive member of IEEE Student Branch}{}{IIT ABC}{}{}
+% \cventry{April 1-5, 2019}{Organizer, GIAN Workshop on subjects}{}{IIT ABC}{}{}
+
+%----------------------------------------------------------------------------------------
+%	Research Supervising
+%----------------------------------------------------------------------------------------
+
+\section{Research Supervising}
+\subsection{Ph.D. students}
+\cventry{2020-2023}{Hugo Tessier}{}{IMT Atlantique}{Stellantis}{}
+\cventry{2021-present}{Hugo Le Blevec}{}{IMT Atlantique}{}{}
+\cventry{2021-present}{Lucas Grativol}{}{IMT Atlantique}{}{}
+\subsection{Post-doctoral researchers}
+\cventry{2022-present}{Hamoud Younes}{}{IMT Atlantique}{GoodFloow}{}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Teaching Assistantship SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching}
+\cventry{2018-2019}{EN112: Digital Electronics Design}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{EN102: Combinatorial and Sequential Logic}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{EN103: Micro-controller project}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{EN114: Computer Architecture}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{MI202: Micro-controller project}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{PG208: Object-Oriented Programmation with C++}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2020-present}{EFFDL: Efficient Deep Learning}{}{IMT Atlantique}{}{}
+\cventry{2020-present}{SEIML: Embedded Systems - Software Hardware Interaction}{}{IMT Atlantique}{}{}
+\cventry{2020-present}{ParPIng: Parallel Computing for Engineers}{}{IMT Atlantique}{}{}
+
+% %----------------------------------------------------------------------------------------
+% %	Fundings Obtained
+% %----------------------------------------------------------------------------------------
+
+\section{Fundings Obtained}
+
+\cventry{2023-2026}{ANR JCJC}{250k€}{ProPruNN: Profitable Pruning of Neural Networks}{Project Lead}{ANR}
+\cventry{2022-2024}{Labex CominLabs}{325k€}{Leasard: Low Energy deep neural networks for Autonomous Search-And-Rescue Drones}{Member}{}
+\cventry{2022-2024}{AI@IMT}{120k€}{Leasard: Low Energy deep neural networks for Autonomous Search-And-Rescue Drones}{Member}{IMT}
+\cventry{2022-2024}{GDR ISIS}{7k€}{Furnitures}{}{CNRS}
+\cventry{2022}{Maupertuis visit program}{1k€}{}{}{Institut Français Finland}
+\cventry{2021-2024}{Futur et Ruptures}{120k€}{FLCNNFPGA: Towards an efficient and privacy-protecting IoT through the use of federated learning and FPGA technologies}{Member}{IMT Atlantique}
+
+% %----------------------------------------------------------------------------------------
+% %	Visiting Researcher
+% %----------------------------------------------------------------------------------------
+
+\section{Visiting Researcher}
+\subsection{As Guest}
+\cventry{2022}{Tampere University}{Finland}{}{}{}
+
+% \cvitem{2022}{\textbf{Project Leader of ANR JCJC Grant ``ProPruNN: Profitable Pruning Of Neural Network''}.}
+
+
+% \cvitem{2018}{Invited to conduct lab sessions in \textit{\textbf{"Training Program on Machine Learning For Ocean Acoustics and Climate Data Analysis"}}, during 22-36 October 2018 at \textbf{Defence R\&D Organization- Naval Physical \& Oceanographic Laboratory (DRDO-NPOL), Kochi, Kerala}.}
+
+
+
+% \section{Referees}
+
+
+% \begin{tabular}{lr}
+% % Referee 1
+% \begin{minipage}[t]{3in}
+% \textbf{Pr. Christophe Jégo}\\
+% \textit{Full Professor , Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% &
+% % Referee 2
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% \\
+% \\ % Additional newline for spacing.
+% % Referee 3
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\ 
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% &
+% \\
+% \end{tabular}
+
+
+\end{document}
