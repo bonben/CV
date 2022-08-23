@@ -77,6 +77,9 @@ if __name__ == '__main__':
         shutil.rmtree(path)
     os.makedirs(path)
 
+    with open('./featured.txt','r') as f:
+        featured_pubs = f.readlines()
+
     pubtype_dict = {"THESE" : "7", "ART" : "2", "COMM" : "1"}
 
     for pub in reponse['response']['docs']:
@@ -88,15 +91,24 @@ if __name__ == '__main__':
         dirname += '-'
         dirname += pub['docid']
         dirname += '/'
-        os.makedirs(path+dirname)
-        with open(path+dirname+'index.md', 'w') as f:
+        os.makedirs(path + dirname)
+        if os.path.exists('./pictures/' + str(pub['docid']) + '.png'):
+            shutil.copyfile('./pictures/' + str(pub['docid']) + '.png', path + dirname + 'featured.png')
+        with open(path + dirname + 'index.md', 'w') as f:
             f.write('+++\n')
             f.write('title = \"' + pub['title_s'][0]+ '\"\n')
             f.write('date = ' + pub['producedDate_tdate']+ '\n')
             f.write('authors = ' + str(pub['authFullName_s'])+ '\n')
             f.write('publication_types = [\"' + pubtype_dict[pub['docType_s']]+ '\"]\n')
             f.write('abstract = \"' + pub['abstract_s'][0].replace('\"','\'')+ '\"\n')
-            f.write('featured = false\n')
+            featured = False
+            for line in featured_pubs:
+                if pub['docid'] in line:
+                    featured = True
+            if featured:
+                f.write('featured = true\n')
+            else:
+                f.write('featured = false\n')
             if pub['docType_s'] == "ART":
                 f.write('publication = \"' + pub['journalTitle_s'] + ' (' + pub['journalPublisher_s'] +')\"\n')
             elif pub['docType_s'] == "COMM":
