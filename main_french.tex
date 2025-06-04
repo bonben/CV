@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage{standalone}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage{lipsum}
+\usepackage[scale=0.85]{geometry}
+\usepackage{fontawesome}
+\usepackage{marvosym}
+
+%----------------------------------------------------------------------------------------
+%	SECTION NOM ET INFORMATIONS DE CONTACT
+%----------------------------------------------------------------------------------------
+
+\firstname{MATHIEU}
+\familyname{LEONARDON}
+
+\title{Maître de conférences\\ \\ Adéquation Algorithme-Architecture \\ Compression en Deep Learning}
+\address{Département MEE}{IMT Atlantique\\ né le 18 mars 1987, français\\}
+\mobile{(+33) 229001384}
+\email{mathieu.leonardon@imt-atlantique.fr}
+\homepage{www.mathieuleonardon.com/}{Ma page web}
+
+\extrainfo{
+    \faGithub\href{https://github.com/bonben}{ Github} \quad
+    \faLinkedin\href{https://bit.ly/3us0P9P}{ Linkedin} \quad
+    }
+\photo[70pt][0.3pt]{picture}
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+\begin{document}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	SECTION FORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Formation}
+
+\cventry{2015--2018}{Doctorat, Génie électrique}{Polytechnique Montréal et Université de Bordeaux}{codirec}{Décodage de codes polaires sur des architectures programmables, \textit{soutenue le 2018-12-13}}
+{}
+\cvitem{Président}{Mohamad Sawan}
+\cvitem{Rapporteurs}{Amer Baghdadi, Emmanuel Casseau}
+\cvitem{Directeurs}{Christophe Jégo, Yvon Savaria}
+\cvitem{Examinateurs}{Camille Leroux, Olivier Muller, Charly Poulliat}
+\cventry{2012--2015}{Master en Ingénierie, Électronique Embarquée}{Bordeaux INP, ENSEIRB-Matmeca}{Bordeaux}{}{}
+
+%----------------------------------------------------------------------------------------
+%	SECTION PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\subsection{Articles de revue}
+\newbibliography{journal}
+\bibliographystyle{journal}{plainyrrev}
+\nocite{journal}{*}
+\bibliography{journal}{journal}
+{\large \textsc{Articles de revue avec comité de lecture}}
+
+\subsection{Actes de conférences}
+\newbibliography{conference}
+\nocite{conference}{*}
+\bibliographystyle{conference}{plainyrrev}
+\bibliography{conference}{conference}
+{\large \textsc{Publications en conférences avec comité de lecture}}
+
+%----------------------------------------------------------------------------------------
+%	SECTION EXPÉRIENCE PROFESSIONNELLE
+%----------------------------------------------------------------------------------------
+
+\section{Expérience Professionnelle}
+
+\cventry{2020 -- présent}{Maître de conférences}{IMT Atlantique, Lab-STICC, UMR CNRS 6285}{}{}{}
+\cventry{2018 -- 2019}{ATER}{Bordeaux INP, ENSEIRB-Matmeca France}{}{}{}
+\cventry{2015 -- 2018}{Doctorant}{Bordeaux INP, ENSEIRB-Matmeca France}{et \textit{Polytechnique Montréal - Canada}}{}{}
+\cventry{2012 -- 2015}{Ingénieur en apprentissage}{Worldcast Systems, France}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	SECTION IMPLICATION DANS LA COMMUNAUTÉ
+%----------------------------------------------------------------------------------------
+
+\section{Évaluateur scientifique}
+
+\cvitem{}{IEEE SIPS, IEEE ISTC, GRETSI, IEEE NEWCAS, IEEE SysInt, MDPI Entropy, Neurips}
+
+\section{Compétences informatiques}
+
+\cvitem{Langages de programmation}{C, C++, Python, PyTorch}
+\cvitem{HDL}{VHDL, Vivado HLS}
+\cvitem{Logiciels}{Git, Gitlab CI, Linux, Inkscape}
+
+%----------------------------------------------------------------------------------------
+%	SECTION RESPONSABILITÉS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Encadrement de recherche
+%----------------------------------------------------------------------------------------
+
+\section{Encadrement de recherche}
+\subsection{Doctorants}
+\cventry{2020-2023}{Hugo Tessier}{}{IMT Atlantique}{Stellantis}{}
+\cventry{2021-2024}{Hugo Le Blevec}{}{IMT Atlantique}{}{}
+\cventry{2021-2024}{Lucas Grativol}{}{IMT Atlantique}{Télécom Saint-Étienne}{}
+\cventry{2022-présent}{Timotée Ly-Manson}{}{IMT Atlantique}{}{}
+\cventry{2022-présent}{Karl La Grassa}{}{IMT Atlantique}{Polytechnique Montréal}{}
+\cventry{2022-présent}{Ismail Amessegher}{}{IMT Atlantique}{University of Adelaide}{}
+\cventry{2025-présent}{Elise Lagarde}{}{IMT Atlantique}{Télécom Paris}{Arkane}
+\subsection{Post-doctorants}
+\cventry{2022-2023}{Hamoud Younes}{}{IMT Atlantique}{GoodFloow}{}
+\cventry{2023-présent}{Hugo Tessier}{}{IMT Atlantique}{}{}
+\cventry{2024-présent}{Hugo Le Blevec}{}{IMT Atlantique}{}{}
+\subsection{Ingénieur de recherche}
+\cventry{2024-2025}{Manon Renault}{}{IMT Atlantique}{}{}
+
+%----------------------------------------------------------------------------------------
+%	SECTION ENSEIGNEMENT
+%----------------------------------------------------------------------------------------
+
+\section{Enseignement}
+\cventry{2018-2019}{EN112 : Conception électronique numérique}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{EN102 : Logique combinatoire et séquentielle}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{EN103 : Projet microcontrôleur}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{EN114 : Architecture des ordinateurs}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{MI202 : Projet microcontrôleur}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2018-2019}{PG208 : Programmation orientée objet avec C++}{}{ENSEIRB-Matmeca}{}{}
+\cventry{2020-présent}{EFFDL : Deep Learning efficace}{}{IMT Atlantique}{Responsable}{}
+\cventry{2020-présent}{SEIML : Systèmes embarqués - Interaction logiciel/matériel}{}{IMT Atlantique}{}{}
+\cventry{2022-2025}{SECTI : Du capteur au traitement intelligent}{}{IMT Atlantique}{}{}
+\cventry{2020-présent}{ParPIng : Calcul parallèle pour ingénieurs}{}{IMT Atlantique}{Responsable}{}
+\cventry{2020-2022}{CHLS : Conception de circuits haut niveau}{}{IMT Atlantique}{}{}
+\cventry{2020-2022}{Électronique}{}{IMT Atlantique}{}{}
+\cventry{2020-2025}{Architecture des ordinateurs}{}{IMT Atlantique}{}{}
+\cventry{2020-2025}{Fonctions électroniques logiques et analogiques}{}{IMT Atlantique}{}{}
+\cventry{2020-2025}{Divers projets étudiants}{}{IMT Atlantique}{}{}
+
+%----------------------------------------------------------------------------------------
+%	SECTION FINANCEMENTS PUBLICS OBTENUS
+%----------------------------------------------------------------------------------------
+
+\section{Financements publics obtenus}
+\cventry{2024-2026}{PCR}{140k€}{Optimisation du traitement spatio-temporel pour l'antibrouillage GNSS avec antennes CRPA utilisant des beamformers CNN et TCN légers}{Membre}{Région Bretagne}
+\cventry{2023-2026}{ANR JCJC}{250k€}{ProPruNN : Élagage rentable de réseaux de neurones}{Chef de projet}{ANR}
+\cventry{2023-2026}{ANR TSIA}{200k€}{Vortex : Essaims de drones reconfigurables basés sur la vision pour une exploration rapide}{Membre}{ANR}
+\cventry{2024-2025}{R\&T CNES}{5k€}{Deep-Learning-FPGA-Challenge d’éco-conception}{Chef de projet}{CNES}
+\cventry{2022-2024}{Labex CominLabs}{325k€}{Leasard : Réseaux neuronaux profonds basse consommation pour drones autonomes de recherche et sauvetage}{Membre}{}
+\cventry{2022-2024}{AI@IMT}{120k€}{Leasard : Réseaux neuronaux profonds basse consommation pour drones autonomes de recherche et sauvetage}{Membre}{IMT}
+\cventry{2022-2024}{GDR ISIS}{7k€}{Mobilier}{}{CNRS}
+\cventry{2022}{Programme de visite Maupertuis}{1k€}{}{}{Institut Français Finlande}
+\cventry{2021-2024}{Futur et Ruptures}{120k€}{FLCNNFPGA : Vers un IoT efficace et respectueux de la vie privée grâce à l’apprentissage fédéré et aux FPGA}{Membre}{IMT Atlantique}
+
+%----------------------------------------------------------------------------------------
+%	SECTION FINANCEMENTS INDUSTRIELS OBTENUS
+%----------------------------------------------------------------------------------------
+
+\section{Financements industriels obtenus}
+\cventry{2025-2028}{Thèse CIFRE}{}{Optimisation du traitement spatio-temporel pour l’antibrouillage GNSS des antennes CRPA via des beamformers CNN et TCN légers}{Encadrant}{Arkane}
+\cventry{2023-2025}{Contrat de recherche}{}{Analyse du Few-Shot Neural Architecture Search dans un cadre métrique}{Membre}{Sony}
+\cventry{2024-2025}{Contrat de recherche}{}{Deep Learning embarqué pour la segmentation sémantique et les LLM}{Chef de projet}{Schneider Electric}
+\cventry{2020-2023}{Thèse CIFRE}{}{Élagage de réseaux de neurones convolutionnels et application aux systèmes de vision embarqués}{Encadrant}{Stellantis}
+\cventry{2022}{Contrat de recherche}{}{DeepGEMM : Inférence ultra basse précision accélérée sur architectures CPU utilisant des tables de consultation}{Chef de projet}{Deeplite}
+
+%----------------------------------------------------------------------------------------
+%	SECTION CHERCHEUR INVITÉ
+%----------------------------------------------------------------------------------------
+
+\section{Chercheur invité}
+\subsection{En tant qu’invité}
+\cventry{2023}{Université Tohoku}{Japon}{1 mois}{}{}
+\cventry{2022}{Université de Tampere}{Finlande}{2 semaines}{}{}
+\cventry{2022}{Sony Stuttgart}{Allemagne}{2 semaines}{}{}
+
+
+
+\end{document}
