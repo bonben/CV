@@ -27,10 +27,10 @@ if __name__ == '__main__':
             reponse = requests.get(requete, timeout=5)
             reponse = reponse.text
             reponse = reponse.replace("Leonardon","L{\\'e}onardon")
-            reponse = reponse.replace("L{\\'e}onardon, Mathieu", "\\textbf{L{\\'e}onardon, Mathieu}")
-            
+            reponse = reponse.replace("L{\\'e}onardon, Mathieu", "\\textbf{L{\\'e}onardon}, \\textbf{Mathieu}")
+
             reponses.append(reponse)
-            
+
 
     except requests.exceptions.HTTPError as errh:
         afficher_erreur_api(errh)
@@ -40,7 +40,7 @@ if __name__ == '__main__':
         afficher_erreur_api(errt)
     except requests.exceptions.RequestException as err:
         afficher_erreur_api(err)
-    
+
 
     dictionary = dict(zip(names,reponses))
     for name in dictionary:
@@ -66,7 +66,7 @@ if __name__ == '__main__':
         afficher_erreur_api(errt)
     except requests.exceptions.RequestException as err:
         afficher_erreur_api(err)
-    
+
 
     # dump jsons in files
     with open('full.json', 'w') as file:
